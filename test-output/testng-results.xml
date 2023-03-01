@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" ignored="0" total="4" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="46574" started-at="2023-01-21T12:48:33Z" finished-at="2023-01-21T12:49:19Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="46574" started-at="2023-01-21T12:48:33Z" finished-at="2023-01-21T12:49:19Z">
+      <class name="com.google.Amazon_testng.Amazon">
+        <test-method status="PASS" signature="browserlaunch()[pri:1, instance:com.google.Amazon_testng.Amazon@6767c1fc]" name="browserlaunch" duration-ms="34849" started-at="2023-01-21T12:48:33Z" finished-at="2023-01-21T12:49:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserlaunch -->
+        <test-method status="PASS" signature="singin()[pri:2, instance:com.google.Amazon_testng.Amazon@6767c1fc]" name="singin" duration-ms="7320" started-at="2023-01-21T12:49:08Z" finished-at="2023-01-21T12:49:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- singin -->
+        <test-method status="PASS" signature="userdata(java.lang.String, java.lang.String)[pri:3, instance:com.google.Amazon_testng.Amazon@6767c1fc]" name="userdata" duration-ms="4308" started-at="2023-01-21T12:49:15Z" data-provider="userdata" finished-at="2023-01-21T12:49:19Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[8778920213]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[tn01bc0444]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- userdata -->
+        <test-method status="FAIL" signature="search_product(java.lang.String)[pri:4, instance:com.google.Amazon_testng.Amazon@6767c1fc]" name="search_product" duration-ms="0" started-at="2023-01-21T12:49:19Z" finished-at="2023-01-21T12:49:19Z">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Parameter 'product' is required by @Test on method search_product but has not been marked @Optional or defined
+in C:\Users\Dell\AppData\Local\Temp\testng-eclipse--2128850505\testng-customsuite.xml]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'product' is required by @Test on method search_product but has not been marked @Optional or defined
+in C:\Users\Dell\AppData\Local\Temp\testng-eclipse--2128850505\testng-customsuite.xml
+at org.testng.internal.Parameters.createParams(Parameters.java:290)
+at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:359)
+at org.testng.internal.Parameters.createParameters(Parameters.java:631)
+at org.testng.internal.Parameters.handleParameters(Parameters.java:769)
+at org.testng.internal.ParameterHandler.handleParameters(ParameterHandler.java:49)
+at org.testng.internal.ParameterHandler.createParameters(ParameterHandler.java:37)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:924)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- search_product -->
+      </class> <!-- com.google.Amazon_testng.Amazon -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
